@@ -1,6 +1,6 @@
 #ifndef SCAVTRAP_HPP
 #define SCAVTRAP_HPP
-#include "Claptrap.hpp"
+#include "ClapTrap.hpp"
 #include <iostream>
 #include <string>
 
