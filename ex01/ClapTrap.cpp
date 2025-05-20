@@ -1,4 +1,4 @@
-#include "Claptrap.hpp"
+#include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap() : m_name("") ,m_hitPoints(10), m_energyPoints(10), m_attackDamages(0)
 {

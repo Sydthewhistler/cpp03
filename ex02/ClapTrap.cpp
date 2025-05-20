@@ -1,25 +1,25 @@
-#include "ClapTrap.hpp"
+#include "Claptrap.hpp"
 
 ClapTrap::ClapTrap() : m_name("") ,m_hitPoints(10), m_energyPoints(10), m_attackDamages(0)
 {
-	std::cout << "Default constructor called" << std::endl;
+	std::cout << "ClapTrap Default constructor called" << std::endl;
 
 }
 
 ClapTrap::ClapTrap(std::string new_name) : m_name(new_name) ,m_hitPoints(10), m_energyPoints(10), m_attackDamages(0)
 {
-	std::cout << "Constructor with name called" << std::endl;
+	std::cout << "ClapTrap Constructor with name called" << std::endl;
 }
 
-ClapTrap::ClapTrap(ClapTrap &other) : m_name(other.m_name) ,m_hitPoints(other.m_hitPoints), m_energyPoints(other.m_energyPoints), m_attackDamages(other.m_attackDamages)
+ClapTrap::ClapTrap(const ClapTrap &other) : m_name(other.m_name) ,m_hitPoints(other.m_hitPoints), m_energyPoints(other.m_energyPoints), m_attackDamages(other.m_attackDamages)
 {
-	std::cout << "Copy constructor called" << std::endl;
+	std::cout << "ClapTrap Copy constructor called" << std::endl;
 }
 
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "Destructor called" << std::endl;
+	std::cout << "ClapTrap Destructor called" << std::endl;
 }
 
 ClapTrap& ClapTrap::operator=(const ClapTrap &copy)
